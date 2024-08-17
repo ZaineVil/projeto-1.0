@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PizzaBurger Point</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+	<header>
+		<h1>PizzaBurger Point</h1>
+		<nav>
+			<ul>
+				<li><a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+				<li><a href="#" class="nav-link"><i class="fas fa-utensils"></i> Cardápio</a></li>
+				<li><a href="#" class="nav-link"><i class="fas fa-info-circle"></i> Sobre</a></li>
+				<li><a href="#" class="nav-link"><i class="fas fa-envelope"></i> Contato</a></li>
+				<li><a href="#" id="cart-icon" class="nav-link"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="menu">
+			<h2>Cardápio</h2>
+
+			<div class="menu-category">
+				<h3>Pizzas</h3>
+				<div class="menu-item">
+				<img src="https://img.freepik.com/fotos-gratis/close-up-em-uma-deliciosa-pizza_23-2150852113.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 417px; height: 247px; margin: 0px; width: 165px;" alt="Fotos Pizza Deliciosa, 12.000+ fotos de arquivo grátis de alta qualidade" jsname="kn3ccd" aria-hidden="false">
+					
+			  	<h4>Pizza Margherita</h4>
+					<p>Deliciosa pizza com molho de tomate e queijo.</p>
+					<button onclick="addToCart('Pizza Margherita', 25.00)">Adicionar ao Carrinho - R$25,00</button>
+				</div>
+				<div class="menu-item">
+					<img src="pizza-pepperoni.jpg" alt="Pizza Pepperoni" class="menu-item-image">
+					<h4>Pizza Pepperoni</h4>
+					<p>Pizza com molho de tomate, queijo e fatias de pepperoni.</p>
+					<button onclick="addToCart('Pizza Pepperoni', 30.00)">Adicionar ao Carrinho - R$30,00</button>
+				</div>
+			</div>
+
+			<div class="menu-category">
+				<h3>Hambúrgueres</h3>
+				<div class="menu-item">
+<img src="https://www.shutterstock.com/image-photo/smash-burger-lettuce-cheddar-cheese-260nw-2479601213.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 390px; height: 264px; margin: 0px; width: 268px;" alt="Hambúrguer: fotos e imagens | Shutterstock" jsname="kn3ccd" aria-hidden="false">					<h4>Hambúrguer Cheddar</h4>
+					<p>Hambúrguer com queijo cheddar, alface e tomate.</p>
+					<button onclick="addToCart('Hambúrguer Cheddar', 20.00)">Adicionar ao Carrinho - R$20,00</button>
+				</div>
+				<div class="menu-item">
+					<img src="hamburguer-bacon.jpg" alt="Hambúrguer Bacon" class="menu-item-image">
+					<h4>Hambúrguer Bacon</h4>
+					<p>Hambúrguer com bacon crocante, queijo e molho especial.</p>
+					<button onclick="addToCart('Hambúrguer Bacon', 25.00)">Adicionar ao Carrinho - R$25,00</button>
+				</div>
+			</div>
+
+			<div class="menu-category">
+				<h3>Batatas Fritas</h3>
+				<div class="menu-item">
+					<img src="batata-frita-classica.jpg" alt="Batata Frita Clássica" class="menu-item-image">
+					<h4>Batata Frita Clássica</h4>
+					<p>Batatas fritas crocantes servidas com molho.</p>
+					<button onclick="addToCart('Batata Frita Clássica', 15.00)">Adicionar ao Carrinho - R$15,00</button>
+				</div>
+				<div class="menu-item">
+				<img src="https://static.itdg.com.br/images/1200-675/0170afe4ec9a1a38624e28c7f6f2c9f2/353027-original.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1000px; width: 268px; height: 237px; margin: 0px;" alt="Batata frita temperada" jsname="kn3ccd" aria-hidden="false">
+					<h4>Batata Frita Temperada</h4>
+					<p>Batatas fritas temperadas com especiarias.</p>
+					<button onclick="addToCart('Batata Frita Temperada', 18.00)">Adicionar ao Carrinho - R$18,00</button>
+				</div>
+			</div>
+
+			<div class="menu-category">
+				<h3>Bebidas</h3>
+				<div class="menu-item">
+					<img src="refri.jpg" alt="Refrigerante" class="menu-item-image">
+					<h4>Refrigerante</h4>
+					<p>Refrigerante de sua escolha.</p>
+					<button onclick="addToCart('Refrigerante', 5.00)">Adicionar ao Carrinho - R$5,00</button>
+				</div>
+				<div class="menu-item">
+					<img src="suco.jpg" alt="Suco Natural" class="menu-item-image">
+					<h4>Suco Natural</h4>
+					<p>Suco natural de frutas.</p>
+					<button onclick="addToCart('Suco Natural', 7.00)">Adicionar ao Carrinho - R$7,00
+				
+					</section>
+					
+					<section id="cart">
+						<h2>Carrinho</h2>
+						<ul id="cart-items"></ul>
+						<p id="total">Total: R$0,00</p>
+						<button onclick="checkout()">Finalizar Pedido</button>
+					</section>
+						
+			
+						
