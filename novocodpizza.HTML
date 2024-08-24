@@ -14,94 +14,104 @@
 		<h1>PizzaBurger Point</h1>
 		<nav>
 			<ul>
-				<li><a href="#" class="nav-link" data-target="home"><i class="fas fa-home"></i> Home</a></li>
-				<li><a href="#" class="nav-link" data-target="menu"><i class="fas fa-utensils"></i> Cardápio</a></li>
-				<li><a href="#" class="nav-link" data-target="about"><i class="fas fa-info-circle"></i> Sobre</a></li>
-				<li><a href="#" class="nav-link" data-target="contact"><i class="fas fa-envelope"></i> Contato</a></li>
-				<li><a href="#" class="nav-link" data-target="cart"><i class="fas fa-shopping-cart"></i> Carrinho</a>
-				</li>
+				<li><a href="#" class="nav-link" data-target="home"
+						aria-label="Ir para a página inicial"><i class="fas fa-home"></i> Home</a></li>
+				<li><a href="#" class="nav-link" data-target="menu"
+						aria-label="Ver cardápio"><i class="fas fa-utensils"></i> Cardápio</a></li>
+				<li><a href="#" class="nav-link" data-target="about"
+						aria-label="Saber mais sobre nós"><i class="fas fa-info-circle"></i> Sobre</a></li>
+				<li><a href="#" class="nav-link" data-target="contact"
+						aria-label="Contato"><i class="fas fa-envelope"></i> Contato</a></li>
+				<li><a href="#" class="nav-link" data-target="cart"
+						aria-label="Ver carrinho"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
 		<!-- Página Inicial -->
-		<div id="home">
+		<div id="home" tabindex="0">
 			<h2>Bem-vindo ao PizzaBurger Point!</h2>
 			<p>Explore o nosso cardápio e aproveite nossas deliciosas ofertas.</p>
 		</div>
 
 		<!-- Cardápio -->
-		<div id="menu" style="display:none;">
+		<div id="menu" style="display:none;" tabindex="0">
 			<h2>Cardápio</h2>
 
 			<div class="menu-category">
 				<h3>Pizzas</h3>
-				<div class="menu-item">
-					<img src="https://img.freepik.com/fotos-gratis/close-up-em-uma-deliciosa-pizza_23-2150852113.jpg" class="menu-item-image" alt="Pizza Margherita">
-					<h4>Pizza Margherita</h4>
+				<div class="menu-item" tabindex="0">
+					<img src="https://img.freepik.com/fotos-gratis/close-up-em-uma-deliciosa-pizza_23-2150852113.jpg" class="menu-item-image" alt="Pizza Margherita" aria-label="Pizza Margherita">
 					<p>Deliciosa pizza com molho de tomate e queijo.</p>
-					<button onclick="addToCart('Pizza Margherita', 25.00)">Adicionar ao Carrinho - R$25,00</button>
+					<button onclick="addToCart('Pizza Margherita', 25.00)" aria-label="Adicionar Pizza Margherita ao carrinho">Adicionar ao Carrinho - R$25,00</button>
 				</div>
-				<div class="menu-item">
-					<img src="pizza-pepperoni.jpg" alt="Pizza Pepperoni" class="menu-item-image">
+				<div class="menu-item" tabindex="0">
+					<div class="menu-item">
+						<h4>Pizza Especial</h4>
+						<p>Deliciosa pizza especial com uma variedade de toppings.</p>
+						<button onclick="addToCart('Pizza Especial', 40.00)">Adicionar ao Carrinho - R$40,00</button>
+					</div>
+					<img src="https://images2.alphacoders.com/133/1337536.png" class="menu-item-image" alt="Mouthwatering Pepperoni Pizza HD Wallpaper for Desktop by Laxmonaut">
 					<h4>Pizza Pepperoni</h4>
 					<p>Pizza com molho de tomate, queijo e fatias de pepperoni.</p>
-					<button onclick="addToCart('Pizza Pepperoni', 30.00)">Adicionar ao Carrinho - R$30,00</button>
+					<button onclick="addToCart('Pizza Pepperoni', 30.00)" aria-label="Adicionar Pizza Pepperoni ao carrinho">Adicionar ao Carrinho - R$30,00</button>
 				</div>
 			</div>
 
 			<div class="menu-category">
 				<h3>Hambúrgueres</h3>
-				<div class="menu-item">
-					<img src="https://www.shutterstock.com/image-photo/smash-burger-lettuce-cheddar-cheese-260nw-2479601213.jpg" alt="Hambúrguer Cheddar" class="menu-item-image">
+				<div class="menu-item" tabindex="0">
+					<img src="https://www.shutterstock.com/image-photo/smash-burger-lettuce-cheddar-cheese-260nw-2479601213.jpg" alt="Hambúrguer Cheddar" class="menu-item-image" aria-label="Hambúrguer Cheddar">
 					<h4>Hambúrguer Cheddar</h4>
 					<p>Hambúrguer com queijo cheddar, alface e tomate.</p>
-					<button onclick="addToCart('Hambúrguer Cheddar', 20.00)">Adicionar ao Carrinho - R$20,00</button>
+					<button onclick="addToCart('Hambúrguer Cheddar', 20.00)" aria-label="Adicionar Hambúrguer Cheddar ao carrinho">Adicionar ao Carrinho - R$20,00</button>
 				</div>
-				<div class="menu-item">
-					<img src="hamburguer-bacon.jpg" alt="Hambúrguer Bacon" class="menu-item-image">
-					<h4>Hambúrguer Bacon</h4>
+				<div class="menu-item" tabindex="0">
+					<img src="https://png.pngtree.com/thumb_back/fw800/background/20240727/pngtree-a-juicy-cheeseburger-with-perfectly-grilled-beef-patty-melted-cheddar-cheese-image_16115430.jpg" class="menu-item-image" alt="Fundo Um Suculento Cheeseburger Com Hambúrguer De Carne Perfeitamente Grelhado Queijo Cheddar Derretido Alface Fresca Fatias De Tomate Maduro Picles Crocantes E Um Bocado De Ketchup Mostarda Em Um Pão De Gergelim">
 					<p>Hambúrguer com bacon crocante, queijo e molho especial.</p>
-					<button onclick="addToCart('Hambúrguer Bacon', 25.00)">Adicionar ao Carrinho - R$25,00</button>
+					<button onclick="addToCart('Hambúrguer Bacon', 25.00)" aria-label="Adicionar Hambúrguer Bacon ao carrinho">Adicionar ao Carrinho - R$25,00</button>
 				</div>
 			</div>
 
 			<div class="menu-category">
 				<h3>Batatas Fritas</h3>
-				<div class="menu-item">
-					<img src="batata-frita-classica.jpg" alt="Batata Frita Clássica" class="menu-item-image">
-					<h4>Batata Frita Clássica</h4>
+				<div class="menu-item" tabindex="0">
+<img src="https://www.assai.com.br/sites/default/files/styles/blog_destaque/public/blog/batata_frita_com_ketchup_-_tipos_de_batata_frita_no_assai_atacadista.jpg?itok=O9Y1YSNJ"
+     class="menu-item-image"
+     style="width: 368px; height: auto; max-width: 100%;"
+     alt="Batata frita: tipos para saborear e vender!"
+     aria-hidden="false">     
+		 <h4>Batata Frita Clássica</h4>
 					<p>Batatas fritas crocantes servidas com molho.</p>
-					<button onclick="addToCart('Batata Frita Clássica', 15.00)">Adicionar ao Carrinho - R$15,00</button>
+					<button onclick="addToCart('Batata Frita Clássica', 15.00)" aria-label="Adicionar Batata Frita Clássica ao carrinho">Adicionar ao Carrinho - R$15,00</button>
 				</div>
-				<div class="menu-item">
-					<img src="https://static.itdg.com.br/images/1200-675/0170afe4ec9a1a38624e28c7f6f2c9f2/353027-original.jpg" alt="Batata Frita Temperada" class="menu-item-image">
+				<div class="menu-item" tabindex="0">
+					<img src="https://static.itdg.com.br/images/1200-675/0170afe4ec9a1a38624e28c7f6f2c9f2/353027-original.jpg" alt="Batata Frita Temperada" class="menu-item-image" aria-label="Batata Frita Temperada">
 					<h4>Batata Frita Temperada</h4>
 					<p>Batatas fritas temperadas com especiarias.</p>
-					<button onclick="addToCart('Batata Frita Temperada', 18.00)">Adicionar ao Carrinho - R$18,00</button>
+					<button onclick="addToCart('Batata Frita Temperada', 18.00)" aria-label="Adicionar Batata Frita Temperada ao carrinho">Adicionar ao Carrinho - R$18,00</button>
 				</div>
 			</div>
 
 			<div class="menu-category">
 				<h3>Bebidas</h3>
-				<div class="menu-item">
-					<img src="refri.jpg" alt="Refrigerante" class="menu-item-image">
-					<h4>Refrigerante</h4>
+				<div class="menu-item" tabindex="0">
+					<img src="https://st3.depositphotos.com/1063437/16407/i/450/depositphotos_164071266-stock-photo-bottles-and-cans-of-assorted.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 600px; height: 235px; margin: 0px; width: 368px;" alt="Fotos de Latas de refrigerante, Imagens de Latas de refrigerante sem  royalties | Depositphotos" jsname="kn3ccd" aria-hidden="false">
 					<p>Refrigerante de sua escolha.</p>
-					<button onclick="addToCart('Refrigerante', 5.00)">Adicionar ao Carrinho - R$5,00</button>
+					<button onclick="addToCart('Refrigerante', 5.00)" aria-label="Adicionar Refrigerante ao carrinho">Adicionar ao Carrinho - R$5,00</button>
 				</div>
-				<div class="menu-item">
-					<img src="suco.jpg" alt="Suco Natural" class="menu-item-image">
+				<div class="menu-item" tabindex="0">
+					<img src="https://s1.1zoom.me/big0/1/Juice_Orange_fruit_Grapes_Fruit_Highball_glass_521682_1280x853.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1280px; height: 245px; margin: 0px; width: 368px;" alt="Papeis de parede Suco Laranja (fruta) Uvas Frutas Copo Fundo preto  Alimentos baixar imagens" jsname="kn3ccd" aria-hidden="false">
 					<h4>Suco Natural</h4>
 					<p>Suco natural de frutas.</p>
-					<button onclick="addToCart('Suco Natural', 7.00)">Adicionar ao Carrinho - R$7,00</button>
+					<button onclick="addToCart('Suco Natural', 7.00)" aria-label="Adicionar Suco Natural ao carrinho">Adicionar ao Carrinho - R$7,00</button>
 				</div>
 			</div>
 		</div>
 
 		<!-- Sobre -->
-		<div id="about" style="display:none;">
+		<div id="about" style="display:none;" tabindex="0">
 			<h2>Sobre Nós</h2>
 			<p>Bem-vindo ao PizzaBurger Point, o lugar onde a qualidade e o sabor se encontram! Fundado em 2024, nosso
 				restaurante se dedica a oferecer as melhores pizzas e hambúrgueres da cidade, com ingredientes frescos e
@@ -109,28 +119,37 @@
 		</div>
 
 		<!-- Contato -->
-		<div id="contact" style="display:none;">
+		<div id="contact" style="display:none;" tabindex="0">
 			<h2>Contato</h2>
-			<p>Endereço: Rua das Pizzas, 123 - Bairro dos Hambúrgueres, Cidade Gourmet</p>
+			<p>Endereço: Rua Dr. José Bonifácio,789 Apto 302 Bairro Centro São Paulo, SP 01020-456 Brasil</p>
 			<p>Telefone: (11) 1234-5678</p>
 			<p>Email: contato@pizzaburgerpoint.com.br</p>
 		</div>
 
 		<!-- Carrinho -->
-		<div id="cart" style="display:none;">
+		<div id="cart" style="display:none;" tabindex="0">
 			<h2>Carrinho</h2>
 			<ul id="cart-items"></ul>
 			<p id="total">Total: R$0,00</p>
-			<button onclick="checkout()">Finalizar Pedido</button>
-		</div>
-	</main>
-
-
-<footer>
-		<p>&copy; 2024 PizzaBurger Point. Todos os direitos reservados.</p>
-	</footer>
-
-	<script src="scripts.js"></script>
-</body>
-
-</html>
+			<button onclick="checkout()" aria-label="Finalizar Pedido">Finalizar Pedido</button>
+			<p>Sugestões de outras pizzarias<a
+					href=https://www.tripadvisor.com.br/Restaurants-g668997-c31-Palmas_State_of_Tocantins.html>Clique
+					aqui para visitar</a> </div> </main> <footer>
+					<footer>
+						<div class="footer-content">
+							<p>&copy; 2024 PizzaBurger Point. Todos os direitos reservados.</p>
+							<p>
+								<a href="https://www.facebook.com/pizzaburgerpoint" target="_blank"
+									rel="noopener noreferrer">Facebook</a> |
+								<a href="https://www.instagram.com/pizzaburgerpoint" target="_blank"
+									rel="noopener noreferrer">Instagram</a>
+								|
+								<a href="https://www.twitter.com/pizzaburgerpoint" target="_blank"
+									rel="noopener noreferrer">Twitter</a>
+							</p>
+							<p>
+								<a href="#contact">Entre em contato</a> |
+								<a href="#about">Sobre nós</a>
+							</p>
+						</div>
+					</footer>
