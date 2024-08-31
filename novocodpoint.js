@@ -68,6 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
       showSection(targetId);
     });
 
+
+
     // Adiciona feedback auditivo ao focar o link
     link.addEventListener('focus', () => fornecerFeedbackAuditivo(link.textContent.trim()));
   });
@@ -85,4 +87,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Inicializa mostrando a página inicial
   showSection('home');
+});
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', function () {
+  const loginIcon = document.getElementById('login-icon');
+  const loginMenu = document.getElementById('login-menu');
+
+  loginIcon.addEventListener('click', function () {
+    loginMenu.classList.toggle('hidden');
+  });
+
+  // Ocultar menu se clicar fora do ícone
+  document.addEventListener('click', function (event) {
+    if (!loginIcon.contains(event.target) && !loginMenu.contains(event.target)) {
+      loginMenu.classList.add('hidden');
+    }
+  });
 });
